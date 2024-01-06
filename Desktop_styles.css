@@ -1,0 +1,447 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.header {
+    width: 1920px;
+    margin: 0 auto;
+}
+.logo {
+    width: 149px;
+    height: 119px;
+}
+.header-text {
+    font-family: 'Futura', sans-serif;
+    color: #D92D2D;
+    /* Adjust the size as needed */
+    font-size: 48px;
+    font-weight: bold;
+    position:absolute;
+    top:47px;
+    left:145px;
+    gap: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Erhöhen Sie den Abstand zwischen Bild und Text */
+  margin: 80px; /* Erhöhen Sie den Abstand vom Rand des Bildschirms */
+}
+
+.product-image img {
+  width: auto; /* Sorgt für die Erhaltung des Seitenverhältnisses */
+  height: 600px; /* Erhöhen Sie die Höhe */
+}
+
+.product-details h2 {
+  font-family: 'Futura', sans-serif;
+  font-size: 6em; /* Erhöhen Sie die Schriftgröße */
+  color: #000;
+  margin: 0 0 20px 0; /* Erhöhen Sie den Abstand nach unten */
+}
+
+.product-button {
+  background-color: #e03e2d; /* Dunkleres Rot für den Button */
+  color: white;
+  border: none;
+  padding: 15px 30px; /* Erhöhen Sie das Padding für einen größeren Button */
+  font-family: 'Futura', sans-serif;
+  font-size: 1.25em;
+  cursor: pointer;
+  border-radius: 25px; /* Abgerundete Ecken für den Button */
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
+      gap: 20px; /* Verringern Sie den Abstand für kleinere Bildschirme */
+  }
+
+  .product-image img {
+      height: 300px; /* Passen Sie die Höhe für kleinere Bildschirme an */
+  }
+
+  .product-details {
+      align-items: center; /* Zentriert den Text unter dem Bild */
+  }
+
+  .product-details h2 {
+      font-size: 2em; /* Passen Sie die Schriftgröße für kleinere Bildschirme an */
+  }
+
+  .product-button {
+      padding: 10px 20px; /* Passen Sie das Padding für kleinere Bildschirme an */
+      font-size: 1em;
+  }
+}
+
+.section-header {
+    font-family: 'Futura', sans-serif;
+    text-align: center;
+    margin-top: 500px;
+    color:black;
+  }
+  
+  .section-header h2 {
+    font-size: 75px; /* Passen Sie die Größe nach Bedarf an */
+    color: #000000; /* Oder die gewünschte Textfarbe */
+    margin-bottom: 10px; /* Abstand zwischen Überschrift und Text */
+  }
+  
+  .section-header p {
+    font-size: 32px; /* Passen Sie die Größe nach Bedarf an */
+    color: #666; /* Oder die gewünschte Textfarbe */
+  }
+
+  .section-title .subtitle {
+    display: inline-block;
+    position: relative;
+    font-family: 'Futura', sans-serif;
+    font-size:28px;
+    /* Weitere Stile für die Schriftart, wie Größe und Farbe */
+  }
+  
+  .section-title .subtitle::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Anpassen, um den Strich unter dem Text zu positionieren */
+    width: 100%; /* oder eine spezifische Breite, wenn gewünscht */
+    height: 3px; /* Dicke des Strichs */
+    background-color: red;
+    
+  }
+
+  .product-container {
+    display: flex;
+    justify-content: space-around; /* Verteilt den Platz gleichmäßig um die Elemente */
+  }
+  
+  .product-image {
+    width: 33%; /* Teilt die Breite der Container durch drei */
+    object-fit: contain; /* Stellt sicher, dass die Bilder vollständig sichtbar sind, ohne das Seitenverhältnis zu verzerren */
+  }
+
+  .product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto; /* Zentrierung */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 1000px; /* Maximale Breite des Kastens */
+}
+
+/* Stil für den Textbereich innerhalb der Produktkarten */
+.product-info {
+    max-width: 50%;
+    padding-right: 20px; /* Fügt einen Abstand zwischen Text und Bild hinzu */
+}
+
+.new-label {
+    color: #FFFFFF; /* Weiße Schriftfarbe für den Label-Text */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Abstand zwischen Label und Überschrift */
+}
+
+.product-info h2, .product-info h3 {
+    font-family: 'Futura', sans-serif;
+    color: #FFFFFF; /* Weiße Schriftfarbe für Überschriften */
+    margin: 0; /* Entfernt Standard-Margins */
+}
+
+.product-info p {
+    font-family: 'Futura', sans-serif;
+    color: #FFFFFF; /* Weiße Schriftfarbe für Absätze */
+}
+
+.buy-button {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Futura', sans-serif;
+    margin-top: 20px; /* Abstand zwischen Text und Button */
+}
+
+.product-image {
+    width: 40%; /* Oder die tatsächliche Breite Ihres Produktbildes */
+    object-fit: contain; /* Verhindert Verzerrungen des Bildes */
+}
+
+/* Stil für die Nachhaltigkeits-Sektion */
+.sustainability-section {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  background: #fff; /* Oder eine andere Farbe, je nach Design */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional */
+  border-radius: 10px; /* Optional */
+}
+
+.sustainability-image img {
+  width: 100%; /* sorgt dafür, dass das Bild responsive bleibt */
+  max-width: 300px; /* Erhöhen Sie diesen Wert, um die Bildgröße zu vergrößern */
+  padding: 20px;
+}
+
+.sustainability-content {
+  padding: 20px;
+  flex: 1; /* Nimmt den restlichen verfügbaren Platz ein */
+}
+
+.sustainability-content h2 {
+  font-family: 'Futura', sans-serif;
+  font-size: 24px; /* Oder eine andere Größe, je nach Design */
+  color: #000; /* Textfarbe */
+  margin-bottom: 5px;
+}
+
+.underline {
+  width: 50px; /* Breite der Unterstreichung */
+  height: 4px; /* Höhe der Unterstreichung */
+  background-color: red; /* Farbe der Unterstreichung */
+  margin-bottom: 20px;
+}
+
+.sustainability-content h3 {
+  font-family: 'Futura', sans-serif;
+  font-size: 20px; /* Oder eine andere Größe, je nach Design */
+  font-weight: bold;
+  color: #000; /* Textfarbe */
+  margin-bottom: 10px;
+}
+
+.sustainability-content p {
+  font-family: 'Futura', sans-serif;
+  color: #666; /* Textfarbe */
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  font-family: 'Futura', sans-serif;
+  color: #000; /* Textfarbe */
+  text-decoration: none; /* Entfernt die Unterstreichung */
+  font-size: 16px; /* Oder eine andere Größe, je nach Design */
+  font-weight: bold;
+}
+
+/* Produktbewertungen Stile */
+.product-reviews {
+  text-align: left;
+  margin: 20px;
+  font-family: 'Futura', sans-serif;
+}
+
+.product-reviews h2 {
+  font-family: 'Futura', sans-serif;
+  font-size: 24px;
+}
+
+.stars-total {
+  font-family: 'Futura', sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.stars {
+  color: #FFD700; /* Gold für die Sterne */
+  margin-right: 10px;
+}
+
+.rating-bar {
+  height: 10px;
+  background-color: #FF0000; /* Rot für die Bewertungsbalken */
+  margin-right: 500px;
+}
+
+.total {
+  font-family: 'Futura', sans-serif;
+  font-size: 18px;
+  margin-right: 400px;
+}
+
+.customer-reviews .review {
+  background: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.customer-reviews .date {
+  font-family: 'Futura', sans-serif;
+  font-size: 14px;
+  text-align: right;
+  display: block;
+}
+
+/* Footer Stile */
+.site-footer {
+  background: #F8F8F8; /* Dunkler Hintergrund für den Footer */
+  color: #000000;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Futura', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-logo img {
+  width: 100px; /* Passen Sie die Größe nach Bedarf an */
+}
+
+
+  
+  
+
+
+
+
+/* Stile für Geräte mit einer maximalen Breite von 768px, typischerweise Tablets und Smartphones im Querformat */
+@media (max-width: 768px) {
+  .header {
+      width: 100%; /* Breite auf 100% für kleinere Bildschirme setzen */
+      margin: 0 auto;
+  }
+
+  .logo {
+      width: 100px; /* Logo verkleinern */
+      height: auto; /* Höhe automatisch anpassen */
+  }
+
+  .header-text {
+      font-size: 24px; /* Schriftgröße für den Header-Text anpassen */
+      top: 20px;
+      left: 10px; /* Position des Header-Texts anpassen */
+      gap: 10px;
+
+      .logo {
+        width: 100px; /* Weiteres Verkleinern des Logos */
+      }
+    
+      .header-text {
+        font-size: 20px; /* Weitere Verkleinerung der Schriftgröße */
+        /* Anpassen der Position, wenn nötig */
+      }
+    
+      /* Falls vorhanden, umschalten zu Hamburger-Menü */
+      .navigation {
+        display: none; /* Navigation ausblenden */
+      }
+    
+      /* Hamburger Icon einblenden */
+      .hamburger-icon {
+        display: block;
+      }
+  }
+
+  .container,
+  .product-card,
+  .sustainability-section,
+  .product-reviews,
+  .site-footer {
+      flex-direction: column; /* Elemente untereinander statt nebeneinander anordnen */
+      align-items: center; /* Zentrieren der Inhalte */
+      margin-left: 0; /* Entfernen Sie den linken Rand */
+      gap: 10px; /* Abstände zwischen den Elementen anpassen */
+  }
+
+  .product-image,
+  .product-card .product-image,
+  .sustainability-image img {
+      width: 80%; /* Bildbreite auf kleinere Bildschirme anpassen */
+      height: auto; /* Höhe automatisch anpassen */
+  }
+
+  .product-details h2,
+  .product-info h2,
+  .product-info h3,
+  .sustainability-content h2,
+  .sustainability-content h3,
+  .product-reviews h2,
+  .footer-links a {
+      font-size: 1.5em; /* Schriftgröße für Überschriften und Links anpassen */
+  }
+
+  .product-details,
+  .product-info,
+  .sustainability-content,
+  .product-reviews,
+  .site-footer .footer-content {
+      padding: 10px; /* Padding für die Inhalte anpassen */
+  }
+
+  .product-button,
+  .buy-button {
+      font-size: 1em; /* Schriftgröße der Buttons anpassen */
+      padding: 8px 16px; /* Padding der Buttons anpassen */
+  }
+
+  .footer-logo img {
+      width: 80px; /* Größe des Footer-Logos anpassen */
+  }
+}
+
+/* Stile speziell für Smartphones im Hochformat */
+@media (max-width: 480px) {
+  .logo {
+      width: 80px; /* Weitere Verkleinerung des Logos für sehr kleine Bildschirme */
+  }
+
+  .header-text {
+      font-size: 20px; /* Weitere Anpassung der Schriftgröße für den Header-Text */
+      top: 10px;
+      left: 5px;
+  }
+
+  .product-image,
+  .product-card .product-image,
+  .sustainability-image img {
+      width: 90%; /* Bilder nehmen mehr Breite ein auf sehr kleinen Bildschirmen */
+  }
+
+  .product-details h2,
+  .product-info h2,
+  .product-info h3,
+  .sustainability-content h2,
+  .sustainability-content h3,
+  .product-reviews h2 {
+      font-size: 1.2em; /* Schriftgröße weiter verkleinern für Überschriften */
+  }
+
+  .footer-links {
+      margin-right: 0; /* Entfernen Sie den rechten Rand bei den Footer-Links */
+  }
+}
